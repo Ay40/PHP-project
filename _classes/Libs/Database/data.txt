@@ -1,0 +1,21 @@
+..CRUD
+--Create
+SQL QUERY ALL CAPITAL
+INSERT INTO table_name (table_column) VALUES ('string', number)
+INSERT INTO roles (name, value) VALUES ('Super', 44);
+
+
+--Read
+SELECT id, name FROM roles ORDER BY name DESC LIMIT 3;
+SELECT table_column FROM table_name ORDER BY table_column DESC LIMIT 3
+
+--Update
+UPDATE roles SET name='Editor' WHERE id=2;
+UPDATE table_name SET table_column='' WHERE id
+
+--Delete
+DELETE FROM roles WHERE id=2 ;
+
+
+SELECT users.id, users.name, users.role_id, roles.name AS role FROM users LEFT JOIN roles
+ON users.role_id = roles.id

@@ -1,0 +1,20 @@
+{
+    "name": "ivy/project",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Ivy",
+            "email": "haml408171@email.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.9",
+        "fakerphp/faker": "^1.24"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libs\\": "_classes/Libs/",
+            "Helpers\\": "_classes/Helpers/"
+        }
+    }
+}
