@@ -5,7 +5,7 @@ namespace Helpers;
 class HTTP
 {
 
-    static $base = "http://localhost/project";
+    static $base = "http://localhost/modified";
 
     static function redirect($page, $q="")
     {
